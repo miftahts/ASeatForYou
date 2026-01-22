@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <style>
+   :root {
+    --broken-white: #fdf9f4;
+    --deep-brown: #3b2a24;
+    --maroon: #6b1f2b;
+}
+
+body {
+    background: #1f1a18;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.paper {
+    background:
+        var(--broken-white);
+
+    max-width: 720px;
+    width: 100%;
+    padding: 90px 90px;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.45);
+    color: var(--deep-brown);
+}
+
+.date {
+    text-align: right;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 64px;
+    margin-bottom: 15px;
+    color: var(--maroon);
+}
+
+.opening {
+    font-size: 15px;
+    line-height: 1;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.details {
+    text-align: center;
+    margin-bottom: 10px;   /* keseluruhan lebih rapat */
+}
+
+.details p {
+    margin-bottom: 14px;   /* jarak antar Place / Time / Dresscode */
+    font-size: 15px;
+    line-height: 1.2;      /* rapat tapi masih nyaman dibaca */
+}
+
+.details span {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--maroon);
+    margin-bottom: 1px;    
+    font-weight: 700; 
+}
+
+.menu-divider {
+    display: flex;
+    align-items: center;
+    margin: 50px 0 35px;
+}
+
+.menu-divider::before,
+.menu-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--maroon);
+}
+.menu-title {
+    margin-top: 35px;      /* bikin agak ke bawah */
+    margin-bottom: 10px;   /* jarak ke menu */
+    font-size: 13px;       /* lebih kecil */
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: var(--maroon);
+    font-weight: 700; 
+}
+
+.menu-divider span {
+    padding: 0 18px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--maroon);
+}
+
+.menu {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.closing {
+    margin-top: 35px;
+    font-size: 15px;
+    line-height: 1.;
+    text-align: center;
+}
+
+.rsvp {
+    display: block;
+    text-align: center;
+    margin: 45px auto;
+    padding: 16px;
+    max-width: 360px;
+    border: 1px solid var(--maroon);
+    text-decoration: none;
+    color: var(--maroon);
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.rsvp span {
+    display: block;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.rsvp:hover {
+    background: var(--maroon);
+    color: var(--broken-white);
+}
+
+.signature {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.signature strong {
+    display: block;
+    margin-top: 12px;
+}
+
+@media(max-width: 600px) {
+    .paper {
+        padding: 45px 28px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Invitation Letter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+
+<div class="paper">
+    <p class="date">Dear friends..</p>
+
+    <h1>Invitation</h1>
+
+    <p class="opening">
+        With great pleasure,<br>
+        we invite you to join us for an intimate dinner evening,
+        shared among our closest and most cherished guests.
+    </p>
+
+    <div class="details">
+        <p><span>Place</span><br>Urban Kitchen.co</p>
+        <p><span>Time</span><br>Saturday, 24 January 2026<br>07.00 PM – Finish</p>
+        <p><span>Dresscode</span><br>Wear Anything You Like</p>
+    </div>
+
+    <p class="menu-title">Dinner will be served with</p>
+    <ul class="menu">
+        <li>Mie Goreng / Nasi Ayam Tunu / Nasi Goreng</li>
+        <li>Roasted Milk Tea / Ice Tea / Aren Latte</li>
+    </ul>
+
+    <p class="closing">
+       Kindly confirm your attendance and menu selection through the contact below by 9:00 PM on January 23, 2026.
+    </p>
+
+    <a class="rsvp" href="https://wa.me/6281366619530" target="_blank">
+        Confirm via WhatsApp<br>
+        <span>0813-6661-9530</span>
+    </a>
+
+    <p class="signature">
+        Warm regards,<br><br>
+        <strong>Miftah</strong>
+    </p>
+</div>
+
+</body>
+</html>
